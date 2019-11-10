@@ -1,9 +1,10 @@
 require 'pry'
 class Triangle
-attr_accessor :sides
+attr_accessor :sides, :kind
 
 def initialize(x,y,z)
 @sides = [x,y,z]
+@kind = ""
 end
 
 
@@ -41,7 +42,8 @@ end
     #  :equilateral
     #  :isosceles
     #  :scalene
-    if self
+    if self.sides[0] == self.sides[1] && self.sides[1] == self.sides[2]
+
 
 
   end
