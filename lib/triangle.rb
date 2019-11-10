@@ -44,7 +44,7 @@ def determine
 #    a_squared = self.sides[0]**2
 #    b_squared = self.sides[1]**2
 #    c_squared = self.sides[2]**2
-
+ binding.pry 
   if self.sides[0] == self.sides[1] && self.sides[1] == self.sides[2]
     self.kind = :equilateral
   elsif self.sides[0] == self.sides[1] || self.sides[1] == self.sides[2] || self.sides[0] == self.sides[2]
