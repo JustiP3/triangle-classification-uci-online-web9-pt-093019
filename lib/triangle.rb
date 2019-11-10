@@ -43,7 +43,7 @@ end
     #  :isosceles
     #  :scalene
     if self.sides[0] == self.sides[1] && self.sides[1] == self.sides[2]
-
+      self.kind = :equilateral
 
 
   end
