@@ -31,7 +31,7 @@ def valid?  #triangle inequality test and all sides > 0
       puts error.message
     end
   else
-    true
+   return true
   end #end of if block
 
 end #end of method valid?
