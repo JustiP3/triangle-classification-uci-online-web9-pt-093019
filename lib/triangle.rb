@@ -23,10 +23,10 @@ end
 
   end
 
-  def valid? #triangle inequality test and all sides > 0
+  def valid?  #triangle inequality test and all sides > 0
     self.sides.sort
 
-    if self.sides.include? {|side|  side <= 0 } || @sides[2] <@sides[1] + @sides[0]
+    if self.sides.include?{|side|  side <= 0 } || @sides[2] <@sides[1] + @sides[0]
       begin
         raise TriangleError
         rescue TriangleError => error
