@@ -68,7 +68,7 @@ end #end of determine method
 
 def error_message
 
-end 
+end
 
 
 end #end of class
