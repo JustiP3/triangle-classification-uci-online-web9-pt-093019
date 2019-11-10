@@ -1,10 +1,8 @@
 class Triangle
-attr_accessor :side1, :side2, :side3
+attr_accessor :sides
 
 def initialize(x,y,z)
-  @side1 = x
-  @side2 = y
-  @side3 = z
+@sides = [x,y,z]
 end
 
 
