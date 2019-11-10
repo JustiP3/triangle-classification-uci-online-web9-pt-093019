@@ -17,7 +17,7 @@ end
   #  :equilateral
   #  :isosceles
   #  :scalene
-    binding.pry
+  #  binding.pry
   self.valid?
 
 
