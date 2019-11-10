@@ -14,20 +14,18 @@ end
   end
 
   def kind
-  #  :equilateral
-  #  :isosceles
-  #  :scalene
+
   #  binding.pry
-    if self.valid?
+  if self.valid?
     self.determine
-    end
+  end
 
   end #end of kind method
 
   def valid?  #triangle inequality test and all sides > 0
     self.sides.sort
 
-    if self.sides.detect {|side|  side <= 0 } || @sides[2] <@sides[1] + @sides[0]
+    if self.sides.detect {|side|  side <= 0 } || self.sides[2] < self.sides[1] + sef.sides[0]
       begin
         raise TriangleError
         rescue TriangleError => error
@@ -38,5 +36,14 @@ end
     end #end of if block
 
   end #end of method valid?
+
+  def determine 
+    #  :equilateral
+    #  :isosceles
+    #  :scalene
+    if self
+  
+
+  end 
 
 end
