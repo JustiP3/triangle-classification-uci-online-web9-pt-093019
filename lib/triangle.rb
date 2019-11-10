@@ -22,6 +22,8 @@ end
   end
 
   def valid? #triangle inequality test and all sides > 0
+    self.sides.sort
+
     if self.sides.include? {|side|  side <=0 }
       begin
         raise TriangleError
