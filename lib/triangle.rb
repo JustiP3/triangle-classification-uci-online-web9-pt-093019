@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
 attr_accessor :sides
 
@@ -17,7 +18,7 @@ end
   #  :isosceles
   #  :scalene
   self.valid?
-
+  binding.pry 
 
   end
 
