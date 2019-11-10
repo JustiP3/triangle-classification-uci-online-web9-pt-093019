@@ -7,8 +7,15 @@ def initialize(x,y,z)
   @side3 = z
 end
 
+
   class TriangleError < StandardError
     # triangle error code
+  end
+
+  def kind
+  #  :equilateral
+  #  :isosceles
+  #  :scalene
   end
 
 end
