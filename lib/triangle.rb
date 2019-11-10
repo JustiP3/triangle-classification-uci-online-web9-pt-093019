@@ -24,7 +24,7 @@ end #end of kind method
 def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
 
-  if self.sides.detect {|side|  side <= 0 } || self.sides[2] < self.sides[1] + sef.sides[0]
+  if self.sides.detect {|side|  side <= 0 } || self.sides[2] < self.sides[1] + self.sides[0]
     begin
       raise TriangleError
       rescue TriangleError => error
