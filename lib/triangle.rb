@@ -16,7 +16,7 @@ end
   #  :equilateral
   #  :isosceles
   #  :scalene
-
+  self.valid?
 
 
   end
