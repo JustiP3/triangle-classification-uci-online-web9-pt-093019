@@ -19,7 +19,7 @@ if self.valid?
   self.determine
 end
 end #end of kind method
-  
+
 
 def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
@@ -44,7 +44,7 @@ def determine
     self.kind = :equilateral
 
 
-  end #end of if block 
-end #end of determine method 
+  end #end of if block
+end #end of determine method
 
-end #end of class 
+end #end of class
