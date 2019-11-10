@@ -40,11 +40,16 @@ def determine
     #  :equilateral
     #  :isosceles
     #  :scalene
+    #sides are sorted in valid method
+    a_squared = self.sides[0]**2
+    b_squared = self.sides[1]**2
+    c_squared = self.sides[2]**2
   if self.sides[0] == self.sides[1] && self.sides[1] == self.sides[2]
     self.kind = :equilateral
-
+  elsif
 
   end #end of if block
 end #end of determine method
+
 
 end #end of class
