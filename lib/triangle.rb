@@ -48,6 +48,8 @@ def determine
   if self.sides[0] == self.sides[1] && self.sides[1] == self.sides[2]
     self.kind = :equilateral
   elsif self.sides[0] == self.sides[1] || self.sides[1] == self.sides[2] || self.sides[0] == self.sides[2]
+    self.kind = :isosceles
+  else
     self.kind = :scalene
 
   end #end of if block
