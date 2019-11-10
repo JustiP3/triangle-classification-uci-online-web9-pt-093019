@@ -19,10 +19,10 @@ end
   #  :scalene
   #  binding.pry
     if self.valid?
-    self.determine 
-    end 
+    self.determine
+    end
 
-  end #end of kind method 
+  end #end of kind method
 
   def valid?  #triangle inequality test and all sides > 0
     self.sides.sort
