@@ -4,7 +4,6 @@ attr_accessor :sides, :kind
 
 def initialize(x,y,z)
 @sides = [x,y,z]
-@kind = ""
 end
 
 
