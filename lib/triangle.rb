@@ -16,6 +16,13 @@ end
   #  :equilateral
   #  :isosceles
   #  :scalene
+
+
+
+  end
+
+  def valid? #triangle inequality test and all sides > 0
+
   end
 
 end
