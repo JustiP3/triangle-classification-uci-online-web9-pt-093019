@@ -35,6 +35,16 @@ def valid?  #triangle inequality test and all sides > 0
    return true
   end #end of if block
 
+  if self.sides[2] < self.sides[1] + self.sides[0]
+    begin
+      raise TriangleError
+      rescue TriangleError => error
+      puts error.message
+    end
+  else
+   return true
+  end #end of if block
+
 end #end of method valid?
 
 def determine
