@@ -37,13 +37,13 @@ end
 
   end #end of method valid?
 
-  def determine 
+  def determine
     #  :equilateral
     #  :isosceles
     #  :scalene
     if self
-  
 
-  end 
+
+  end
 
 end
