@@ -9,7 +9,9 @@ end
 
 
   class TriangleError < StandardError
-    # triangle error code
+    def message
+      "All three sides must be greater than 0 and one side must be greater than the sum of the other two sides"
+    end
   end
 
   def kind
