@@ -52,7 +52,7 @@ def determine
   else
     self.kind = :scalene
   end #end of if block
-  
+
 end #end of determine method
 
 
