@@ -51,8 +51,8 @@ def determine
     self.kind = :isosceles
   else
     self.kind = :scalene
-
   end #end of if block
+  
 end #end of determine method
 
 
