@@ -18,7 +18,7 @@ end
   #  :isosceles
   #  :scalene
   self.valid?
-  binding.pry 
+  binding.pry
 
   end
 
