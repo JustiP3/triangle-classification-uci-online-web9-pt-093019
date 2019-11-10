@@ -22,7 +22,16 @@ end
   end
 
   def valid? #triangle inequality test and all sides > 0
+    if self.sides.include? {|side|  side <=0 }
+      begin
+        raise TriangleError
+        rescue TriangleError => error
+        puts error.message
+      end
+    else
+      true
+    end #end of if block
 
-  end
+  end #end of method valid?
 
 end
