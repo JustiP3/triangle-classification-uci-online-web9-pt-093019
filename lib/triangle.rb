@@ -18,10 +18,11 @@ end
   #  :isosceles
   #  :scalene
   #  binding.pry
-  self.valid?
+    if self.valid?
+    self.determine 
+    end 
 
-
-  end
+  end #end of kind method 
 
   def valid?  #triangle inequality test and all sides > 0
     self.sides.sort
