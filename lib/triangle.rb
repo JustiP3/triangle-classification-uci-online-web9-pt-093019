@@ -25,11 +25,11 @@ def valid?  #triangle inequality test and all sides > 0
 
   if (self.sides.detect {|side|  side < 1 })
     raise TriangleError
-  end 
+  end
   if (self.sides[2] < self.sides[1] + self.sides[0])
     raise TriangleError
-  end 
-  
+  end
+
   true
 
 end #end of method valid?
