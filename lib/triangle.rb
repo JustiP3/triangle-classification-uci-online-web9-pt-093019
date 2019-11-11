@@ -23,7 +23,7 @@ end #end of kind method
 def valid?  #triangle inequality test and all sides > 0
   new_array = self.sides.sort
 # binding.pry
-  if (self.sides.find {|side| side <= 0}) || self.sides[2] >= self.sides[1] + self.sides[0]
+  if (new_array.find {|side| side <= 0}) || new_array[2] >= new_array[1] + new_array[0]
     raise TriangleError
   else
     return true
