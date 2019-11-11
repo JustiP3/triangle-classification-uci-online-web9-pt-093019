@@ -52,11 +52,12 @@ def determine
 end #end of determine method
 
 def error_message
-  begin
+  
+  #begin
     raise TriangleError
-    rescue TriangleError => error
-    puts error.message
-  end
+    #rescue TriangleError => error
+    #puts error.message
+  #end
 end
 
 
