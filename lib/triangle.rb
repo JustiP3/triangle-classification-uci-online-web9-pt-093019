@@ -24,7 +24,7 @@ def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
 
   if (self.sides.detect {|side|  side <= 0 }) || (self.sides[2] < self.sides[1] + self.sides[0])
-    self.error_message
+    raise TriangleError
   else
     return true
   end #end of if block
@@ -50,14 +50,6 @@ def determine
 
 end #end of determine method
 
-def error_message
-
-  #begin
-    raise TriangleError
-    #rescue TriangleError => error
-    #puts error.message
-  #end
-end
 
 
 end #end of class
