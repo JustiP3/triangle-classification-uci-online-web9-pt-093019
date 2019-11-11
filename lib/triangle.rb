@@ -29,7 +29,6 @@ def valid?  #triangle inequality test and all sides > 0
     return true
   end #end of if block
 
-
 end #end of method valid?
 
 def determine
