@@ -23,12 +23,12 @@ end #end of kind method
 def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
 # binding.pry
-  if (self.sides[0] <= 0) || (self.sides[2] <= (self.sides[1] + self.sides[0]))
-    raise TriangleError
-  else
-    return true
-  end
-
+#  if (self.sides[0] <= 0) || (self.sides[2] <= (self.sides[1] + self.sides[0]))
+#    raise TriangleError
+#  else
+#    return true
+#  end
+true 
 end #end of method valid?
 
 def determine
