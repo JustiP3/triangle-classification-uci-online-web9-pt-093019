@@ -22,7 +22,7 @@ end #end of kind method
 
 def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
-
+ binding.pry 
   if (self.sides[0] <= 0)
     raise TriangleError
   end
