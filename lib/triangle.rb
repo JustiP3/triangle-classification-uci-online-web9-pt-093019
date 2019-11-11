@@ -14,7 +14,7 @@ class TriangleError < StandardError
 end
 
 def kind
-#  binding.pry
+ binding.pry
 if self.valid?
   self.determine
 end
@@ -22,6 +22,7 @@ end #end of kind method
 
 def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
+  
 
   if (self.sides.detect {|side|  side <= 0 }) || (self.sides[2] < self.sides[1] + self.sides[0])
     self.error_message
