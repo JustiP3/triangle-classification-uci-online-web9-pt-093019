@@ -24,18 +24,13 @@ def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
 
   if self.sides.detect {|side|  side <= 0 }
-  #     self.sides[2] < self.sides[1] + self.sides[0]
-
+    self.error_message
   else
    return true
   end #end of if block
 
   if self.sides[2] < self.sides[1] + self.sides[0]
-    begin
-      raise TriangleError
-      rescue TriangleError => error
-      puts error.message
-    end
+    self.error_message
   else
    return true
   end #end of if block
