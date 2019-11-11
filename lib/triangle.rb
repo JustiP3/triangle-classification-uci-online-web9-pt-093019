@@ -14,7 +14,7 @@ class TriangleError < StandardError
 end
 
 def kind
- binding.pry
+ #binding.pry
 if self.valid?
   self.determine
 end
