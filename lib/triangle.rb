@@ -26,7 +26,7 @@ def valid?  #triangle inequality test and all sides > 0
   if (self.sides[0] < 1)
     raise TriangleError
   end
-  if (self.sides[2] < self.sides[1] + self.sides[0])
+  if self.sides[2] < (self.sides[1] + self.sides[0])
     raise TriangleError
   end
 
