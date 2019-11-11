@@ -21,7 +21,7 @@ end
 end #end of kind method
 
 def valid?  #triangle inequality test and all sides > 0
-  self.sides.sort
+  new_array = self.sides.sort
 # binding.pry
   if (self.sides.find {|side| side <= 0}) || self.sides[2] >= self.sides[1] + self.sides[0]
     raise TriangleError
