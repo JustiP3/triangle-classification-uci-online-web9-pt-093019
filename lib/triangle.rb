@@ -22,7 +22,7 @@ end #end of kind method
 
 def valid?  #triangle inequality test and all sides > 0
   self.sides.sort
-  
+
 
   if (self.sides.detect {|side|  side <= 0 }) || (self.sides[2] < self.sides[1] + self.sides[0])
     self.error_message
@@ -52,7 +52,7 @@ def determine
 end #end of determine method
 
 def error_message
-  
+
   #begin
     raise TriangleError
     #rescue TriangleError => error
